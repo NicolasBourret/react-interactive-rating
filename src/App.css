@@ -1,0 +1,105 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --primary: hsl(25, 97%, 53%);
+  --radius: 20px;
+}
+
+.App {
+  position: relative;
+  height: 100vh;
+  max-width: 1440px;
+  min-width: 350px;
+}
+
+h1 {
+  color: var(--white);
+}
+
+p {
+  color: var(--light-grey);
+}
+
+ul {
+  color: var(--light-grey);
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  background-color: var(--primary);
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 0px;
+  border-radius: var(--radius);
+  color: var(--white);
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--primary);
+  background-color: var(--white);
+}
+
+.container {
+  background-color: var(--dark-blue);
+  padding: 20px;
+  width: 325px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: var(--radius);
+}
+
+.rounded {
+  border-radius: 50%;
+  background-color: var(--very-dark-blue);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rounded__button {
+  cursor: pointer;
+}
+
+.rounded__button--active {
+  color: var(--white);
+  background-color: var(--light-grey);
+}
+
+.rounded__button:hover {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.second-step {
+  text-align: center;
+}
+
+.second-step svg {
+  margin-top: 20px;
+}
+
+.second-step .rating {
+  background-color: var(--dark-blue);
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 30px;
+  color: var(--primary);
+  margin: 20px 0;
+}
